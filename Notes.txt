@@ -1,0 +1,22 @@
+
+TODO:
+    How do we find out if a solution is unique?
+        After doing this, I can work on removing values from the grid to make a game
+    Turn sudoku.c into a library with .h file
+    Clean up curs.c?
+    Make function in curs.c that prints a sudoku grid to the screen
+        Set apart values that are actually part of the grid from player-created values
+            possibly by inverting text, or bolding it.
+
+
+Uniqueness of solution...
+1 Initialize solution space by checking which values are valid for all cells
+2 Set all single values
+3 Back to 1 until no single values remain
+4 If any solution vector exists with size > 1, return not unique.
+5 Else, return unique.
+
+Backtracking to count number of solutions:
+
+Next thing I want to do is generate the minimum sudoku for a given grid
+
